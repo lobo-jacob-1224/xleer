@@ -15,7 +15,9 @@ El paquete incluye además `hablar` (dice un texto) y `leer` (lee un `.txt` o un
 
 ## Instalación (Debian y derivadas, sesión X11)
 
-**Descarga directa del paquete compilado:** [`descargas/xleer_1.0.0-1_all.deb`](descargas/xleer_1.0.0-1_all.deb) (también en la [última versión](https://github.com/lobo-jacob-1224/xleer/releases/latest)). Desde la terminal:
+### [⬇ Descargar xleer_1.0.0-1_all.deb](https://github.com/lobo-jacob-1224/xleer/raw/refs/heads/main/descargas/xleer_1.0.0-1_all.deb)
+
+El paquete compilado (39 KB) empieza a descargarse al pulsar el enlace. También está en la carpeta [`descargas/`](descargas/) y en la [última versión](https://github.com/lobo-jacob-1224/xleer/releases/latest). Desde la terminal:
 
 ```bash
 wget https://raw.githubusercontent.com/lobo-jacob-1224/xleer/main/descargas/xleer_1.0.0-1_all.deb
