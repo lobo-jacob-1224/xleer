@@ -18,8 +18,8 @@ El paquete incluye además `hablar` (dice un texto) y `leer` (lee un `.txt` o un
 **Descarga directa del paquete compilado:** [`descargas/xleer_1.0.0-1_all.deb`](descargas/xleer_1.0.0-1_all.deb) (también en la [última versión](https://github.com/lobo-jacob-1224/xleer/releases/latest)). Desde la terminal:
 
 ```bash
-wget https://github.com/lobo-jacob-1224/xleer/raw/main/descargas/xleer_1.0.0-1_all.deb
-wget https://github.com/lobo-jacob-1224/xleer/raw/main/descargas/SHA256SUMS
+wget https://raw.githubusercontent.com/lobo-jacob-1224/xleer/main/descargas/xleer_1.0.0-1_all.deb
+wget https://raw.githubusercontent.com/lobo-jacob-1224/xleer/main/descargas/SHA256SUMS
 sha256sum -c SHA256SUMS                 # opcional: comprobar la descarga
 sudo apt install ./xleer_1.0.0-1_all.deb
 ```
