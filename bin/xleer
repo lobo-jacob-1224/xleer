@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# xleer  ->  la hermana de xkill, con punteria.
+# Congela la pantalla y saca una CRUZ:
+#   CLIC sobre un texto   -> Alvaro lee ese parrafo y lo que sigue debajo en su columna.
+#   ARRASTRAR un recuadro -> lee exactamente lo que hay dentro.
+#   Esc o clic derecho    -> cancelar.
+# Si Alvaro esta hablando y vuelves a lanzar xleer, se calla y lee lo nuevo.
+# Errores y registro en ~/.local/state/xleer/xleer.log
+LIB=/usr/lib/xleer
+EST="${XDG_STATE_HOME:-$HOME/.local/state}/xleer"
+mkdir -p "$EST"
+# parar la lectura anterior (patrones exactos: solo procesos de xleer, nada mas)
+pkill -f "^/usr/bin/python3 $LIB/(xleer|hablar)\.py" 2>/dev/null
+pkill -f "^mpv .*hablar_alvaro\.mp3$" 2>/dev/null
+exec /usr/bin/python3 "$LIB/xleer.py" "$@" 2>>"$EST/xleer.log"

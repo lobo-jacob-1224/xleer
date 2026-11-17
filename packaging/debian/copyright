@@ -1,0 +1,16 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: xleer
+Source: https://github.com/lobo-jacob-1224/xleer
+
+Files: usr/lib/xleer/xleer.py usr/lib/xleer/hablar.py usr/bin/xleer usr/bin/hablar usr/bin/leer usr/share/icons/hicolor/scalable/apps/xleer.svg usr/share/applications/xleer.desktop usr/share/man/man1/*
+Copyright: 2026 Jacobo Cánovas García
+License: Sin-licencia-especificada
+ El autor no ha indicado una licencia de redistribucion para estos ficheros.
+
+Files: usr/lib/xleer/vendor/edge_tts/*
+Copyright: Drew Mcdonald y colaboradores de edge-tts
+License: LGPL-3
+ edge-tts 7.3.1 (https://github.com/rany2/edge-tts), incluido sin modificar.
+ El texto completo de la licencia GNU LGPL version 3 esta en
+ /usr/share/common-licenses/LGPL-3 y, junto al codigo original,
+ en /usr/share/doc/xleer/LICENSE.edge-tts.

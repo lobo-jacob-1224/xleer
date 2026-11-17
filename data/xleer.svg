@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Fondo degradado calido: violeta -> rosa -->
+    <linearGradient id="bg" x1="0" y1="0" x2="512" y2="512" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#7C3AED"/>
+      <stop offset="0.55" stop-color="#C026D3"/>
+      <stop offset="1" stop-color="#F43F7E"/>
+    </linearGradient>
+    <!-- Brillo suave arriba a la izquierda -->
+    <radialGradient id="shine" cx="0.3" cy="0.25" r="0.8">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.35"/>
+      <stop offset="0.5" stop-color="#FFFFFF" stop-opacity="0.07"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+    <!-- Resplandor para los trazos blancos -->
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#3B0764" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <!-- Placa redondeada -->
+  <rect x="16" y="16" width="480" height="480" rx="116" fill="url(#bg)"/>
+  <rect x="16" y="16" width="480" height="480" rx="116" fill="url(#shine)"/>
+  <rect x="16.5" y="16.5" width="479" height="479" rx="115.5" fill="none" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="2"/>
+
+  <g filter="url(#glow)" fill="none" stroke="#FFFFFF" stroke-linecap="round">
+    <!-- Reticula / cruz de punteria -->
+    <circle cx="196" cy="256" r="66" stroke-width="16"/>
+    <!-- Punto central -->
+    <circle cx="196" cy="256" r="13" fill="#FFFFFF" stroke="none"/>
+    <!-- Ticks de la cruz (arriba, abajo, izquierda) -->
+    <line x1="196" y1="150" x2="196" y2="186" stroke-width="16"/>
+    <line x1="196" y1="326" x2="196" y2="362" stroke-width="16"/>
+    <line x1="90"  y1="256" x2="126" y2="256" stroke-width="16"/>
+
+    <!-- Ondas de voz saliendo hacia la derecha -->
+    <path d="M 290 215 A 56 56 0 0 1 290 297" stroke-width="17" stroke-opacity="1"/>
+    <path d="M 318 189 A 92 92 0 0 1 318 323" stroke-width="15" stroke-opacity="0.72"/>
+    <path d="M 346 164 A 128 128 0 0 1 346 348" stroke-width="13" stroke-opacity="0.45"/>
+  </g>
+</svg>

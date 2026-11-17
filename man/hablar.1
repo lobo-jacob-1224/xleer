@@ -1,0 +1,13 @@
+.TH HABLAR 1 "noviembre 2026" "xleer 1.0.0" "Comandos de usuario"
+.SH NOMBRE
+hablar \- dice un texto en voz alta con la voz de Alvaro (edge\-tts)
+.SH SINOPSIS
+.B hablar
+[\fITEXTO\fR]
+.SH DESCRIPCION
+Dice TEXTO con la voz es\-ES\-AlvaroNeural. Si no se da texto y hay una tuberia, lee de la entrada estandar
+(\fBcat texto.txt | hablar\fR). El audio se genera en el servicio en linea de Microsoft Edge (hace falta internet)
+y se reproduce con mpv, ffplay, cvlc o play, el primero que haya.
+.SH VEASE TAMBIEN
+.BR xleer (1),
+.BR leer (1)

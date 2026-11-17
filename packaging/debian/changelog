@@ -1,0 +1,8 @@
+xleer (1.0.0-1) unstable; urgency=low
+
+  * Primer paquete .deb de xleer: comandos xleer, hablar y leer.
+  * edge-tts 7.3.1 va en /usr/lib/xleer/vendor; el resto de
+    dependencias, de Debian.
+  * El registro (xleer.log) va a ~/.local/state/xleer/.
+
+ -- Jacobo Cánovas García <116467868+lobo-jacob-1224@users.noreply.github.com>  Tue, 17 Nov 2026 15:10:25 +0100

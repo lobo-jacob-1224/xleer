@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Lanzador comodo:  hablar "lo que quieras oir"      (o:  cat texto.txt | hablar)
+LIB=/usr/lib/xleer
+PYTHONPATH="$LIB/vendor${PYTHONPATH:+:$PYTHONPATH}" exec /usr/bin/python3 "$LIB/hablar.py" "$@"

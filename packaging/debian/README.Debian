@@ -1,0 +1,10 @@
+xleer
+=====
+Comandos:
+  xleer                  cruz + clic (lee ese parrafo y lo de debajo en su columna) o recuadro (lee lo de dentro)
+  hablar "texto"         dice el texto con la voz de Alvaro
+  leer fichero.txt|pdf   lee un fichero en voz alta
+
+La voz (es-ES-AlvaroNeural) la genera el servicio en linea de Microsoft Edge mediante edge-tts:
+el texto que se lee SE ENVIA a ese servicio, hace falta conexion a internet.
+Errores y las primeras 300 letras de cada lectura: ~/.local/state/xleer/xleer.log

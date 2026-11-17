@@ -1,0 +1,29 @@
+.TH XLEER 1 "noviembre 2026" "xleer 1.0.0" "Comandos de usuario"
+.SH NOMBRE
+xleer \- lee en voz alta el texto de la pantalla (cruz + clic, OCR, voz Alvaro)
+.SH SINOPSIS
+.B xleer
+[\fB\-\-solo\-texto\fR] [\fB\-\-punto\fR \fIX Y\fR] [\fB\-\-caja\fR \fIX1 Y1 X2 Y2\fR] [\fB\-\-imagen\fR \fIFICHERO\fR]
+.SH DESCRIPCION
+Congela la pantalla y muestra una cruz. Un clic sobre un texto lo lee desde ese parrafo hacia abajo en su columna;
+arrastrar un recuadro lee lo que hay dentro. Esc o clic derecho cancelan. Tras un clic baja la pagina con la rueda y
+sigue leyendo lo nuevo hasta que se mueve el raton. El texto se obtiene con tesseract y se dice con la voz
+es\-ES\-AlvaroNeural (servicio en linea de Microsoft: el texto leido se envia a ese servicio).
+.SH OPCIONES
+.TP
+.B \-\-solo\-texto
+No habla, solo imprime el texto.
+.TP
+.BI \-\-punto " X Y"
+Pruebas: simula un clic en X,Y.
+.TP
+.BI \-\-caja " X1 Y1 X2 Y2"
+Pruebas: simula un recuadro.
+.TP
+.BI \-\-imagen " FICHERO"
+Pruebas: usa una imagen en vez de capturar la pantalla (no baja la pagina).
+.SH FICHEROS
+.I ~/.local/state/xleer/xleer.log
+.SH VEASE TAMBIEN
+.BR hablar (1),
+.BR leer (1)

@@ -1,0 +1,16 @@
+Package: xleer
+Version: @VERSION@
+Section: sound
+Priority: optional
+Architecture: all
+Depends: python3 (>= 3.9), python3-tk, python3-pil, python3-pil.imagetk, python3-aiohttp, python3-certifi, python3-tabulate, python3-typing-extensions, mpv, maim, xdotool, x11-utils, tesseract-ocr, tesseract-ocr-spa, tesseract-ocr-eng
+Recommends: poppler-utils
+Installed-Size: @TAM@
+Maintainer: Jacobo Cánovas García <116467868+lobo-jacob-1224@users.noreply.github.com>
+Homepage: https://github.com/lobo-jacob-1224/xleer
+Description: lee en voz alta el texto de la pantalla (cruz + clic, OCR, voz Alvaro)
+ La hermana de xkill, con punteria: congela la pantalla y saca una cruz.
+ Un clic sobre un texto y Alvaro lo lee; arrastrar un recuadro lee lo de dentro.
+ Usa tesseract para el OCR y edge-tts (voz es-ES-AlvaroNeural, servicio en linea
+ de Microsoft: el texto leido se envia a ese servicio) para la voz.
+ Incluye tambien "hablar" (dice un texto) y "leer" (lee un .txt o .pdf).

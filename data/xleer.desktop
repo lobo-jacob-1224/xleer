@@ -1,0 +1,12 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=xleer
+GenericName=Léemelo en voz alta
+Comment=Clic en un texto y Álvaro lo lee desde ahí hacia abajo; arrastra un recuadro y lee lo de dentro
+Exec=xleer
+Icon=xleer
+Terminal=false
+StartupNotify=false
+Categories=Utility;Accessibility;AudioVideo;
+Keywords=voz;leer;escuchar;ocr;alvaro;cruz;

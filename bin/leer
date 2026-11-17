@@ -1,0 +1,30 @@
+#!/usr/bin/env bash
+# leer <fichero>   ->  lee en voz alta un .txt o .pdf con la voz de Alvaro
+set -uo pipefail
+F="${1:-}"
+
+if [ -z "$F" ]; then
+  echo "Uso:  leer <fichero .txt o .pdf>"
+  exit 1
+fi
+if [ ! -f "$F" ]; then
+  echo "No existe el fichero: $F"
+  exit 1
+fi
+
+ext="${F##*.}"
+ext="${ext,,}"
+
+case "$ext" in
+  pdf)
+    if ! command -v pdftotext >/dev/null; then
+      echo "Falta pdftotext.  Instala:  sudo apt install -y poppler-utils"
+      exit 1
+    fi
+    pdftotext -layout "$F" - | /usr/bin/hablar
+    ;;
+  *)
+    # .txt, .md, .log, .csv y cualquier texto plano
+    cat "$F" | /usr/bin/hablar
+    ;;
+esac
